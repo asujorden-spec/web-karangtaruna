@@ -2,6 +2,9 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
+# Eksport aplikasi untuk Vercel
+app = app
+
 @app.route('/')
 def home():
     return render_template('home.html')
