@@ -1,6 +1,8 @@
 from flask import Flask, render_template
 
-app = Flask(__name__)
+import os
+
+app = Flask(__name__, static_folder='static')
 
 # Eksport aplikasi untuk Vercel
 app = app
