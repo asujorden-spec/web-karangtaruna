@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block title %}Beranda - Karang Taruna Jayaraksa{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<div class="bg-primary text-white text-center py-5">
+    <div class="container py-5">
+        <h1 class="display-4 fw-bold">Selamat Datang di Karang Taruna Jayaraksa</h1>
+        <p class="lead">Wadah kreativitas dan pengabdian pemuda untuk desa tercinta.</p>
+        <div class="mt-4">
+            <a href="/profil" class="btn btn-light btn-lg me-2">Tentang Kami</a>
+            <a href="/program" class="btn btn-outline-light btn-lg">Program Kerja</a>
+        </div>
+    </div>
+</div>
+
+<!-- Featured Event -->
+<div class="container my-5">
+    <div class="row align-items-center bg-black text-white rounded shadow-lg overflow-hidden g-0">
+        <div class="col-md-7">
+            <img src="{{ url_for('static', filename='img/logo.jpg') }}" class="img-fluid w-100 p-4" alt="Logo Karang Taruna Jayaraksa">
+        </div>
+        <div class="col-md-5 p-5">
+            <span class="text-secondary small fw-bold text-uppercase mb-2 d-block">Event Mendatang</span>
+            <h2 class="fw-bold mb-3 display-6">Lomba Rakyat 17-an: Meriah, Kompak, Merdeka!</h2>
+            <p class="text-secondary mb-4">Mari rayakan HUT RI ke-81 dengan penuh semangat. Berbagai lomba tradisional menanti Anda di Halaman rumah Pak Supar pada tanggal 29-30 Agustus 2026.</p>
+            <a href="/proposal" class="btn btn-outline-primary btn-lg rounded-0 px-4">Lihat Detail & Proposal</a>
+        </div>
+    </div>
+</div>
+
+<!-- Welcome Message -->
+<div class="container my-5 py-4">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <h2 class="fw-bold mb-4">Kata Sambutan Ketua</h2>
+            <p>Halo Pemuda! Karang Taruna Jayaraksa hadir sebagai jembatan bagi seluruh pemuda untuk berkontribusi aktif dalam pembangunan desa. Mari bergabung dan berkarya bersama kami.</p>
+            <p class="text-muted italic">"Muda Berkarya, Desa Berdaya."</p>
+            <p><strong>- Soemarno JMB, Ketua Karang Taruna</strong></p>
+        </div>
+        <div class="col-md-6">
+            <img src="{{ url_for('static', filename='img/pengurus.jpg') }}" class="img-fluid rounded shadow" alt="Foto Pengurus Karang Taruna">
+        </div>
+    </div>
+</div>
+
+<!-- Shortcuts -->
+<div class="container my-5">
+    <div class="row text-center g-4">
+        <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm p-4">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Kegiatan Sosial</h5>
+                    <p class="card-text">Bakti sosial dan bantuan untuk masyarakat yang membutuhkan.</p>
+                    <a href="/program" class="btn btn-primary btn-sm">Lihat Detail</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm p-4">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Olahraga & Seni</h5>
+                    <p class="card-text">Pengembangan bakat pemuda di bidang olahraga dan seni budaya.</p>
+                    <a href="/program" class="btn btn-primary btn-sm">Lihat Detail</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm p-4">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Unduh Proposal</h5>
+                    <p class="card-text">Akses dokumen proposal kegiatan Karang Taruna secara terbuka.</p>
+                    <a href="/proposal" class="btn btn-primary btn-sm">Buka Halaman</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block title %}Kontak - Karang Taruna Jayaraksa{% endblock %}
+
+{% block content %}
+<div class="container my-5 py-4">
+    <h2 class="text-center fw-bold mb-5">Hubungi Kami</h2>
+    
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="card border-0 shadow-sm p-4 h-100">
+                <h4 class="fw-bold text-primary mb-4">Informasi Sekretariat</h4>
+                <div class="mb-3">
+                    <h6 class="fw-bold">Alamat:</h6>
+                    <p>Jrakah RT 02 RW 01, Golo, Kec. Puhpelem, Kab. Wonogiri, Jawa Tengah.</p>
+                </div>
+                <div class="mb-3">
+                    <h6 class="fw-bold">Email:</h6>
+                    <p>karangtarunajayaraksa@gmail.com</p>
+                </div>
+                <div class="mb-3">
+                    <h6 class="fw-bold">Telepon/WA:</h6>
+                    <p>0851-7218-3477 (Soemarno Jmb)</p>
+                    <p>0812-2501-576 (Bugel Waskito)</p>
+                </div>
+                <div class="mt-4 p-3 bg-light rounded border">
+                    <h6 class="fw-bold text-primary">Donasi & Sponsor (QRIS)</h6>
+                    <p class="small mb-2">NMID: ID1026548888910</p>
+                    <div class="text-center">
+                        <img src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=qris%20code%20payment%20scan%20me&image_size=square" class="img-fluid rounded" style="max-width: 150px;" alt="QRIS Jayaraksa">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="card border-0 shadow-sm p-4 h-100">
+                <h4 class="fw-bold text-primary mb-4">Kirim Pesan</h4>
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Nama Lengkap</label>
+                        <input type="text" class="form-control" placeholder="Masukkan nama Anda">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" placeholder="nama@email.com">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Pesan</label>
+                        <textarea class="form-control" rows="4" placeholder="Tuliskan pesan Anda di sini"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Kirim Sekarang</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
