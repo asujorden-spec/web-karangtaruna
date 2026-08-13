@@ -27,5 +27,9 @@ def proposal():
 def kontak():
     return render_template('kontak.html')
 
+@app.route('/dokumentasi')
+def dokumentasi():
+    return render_template('dokumentasi.html')
+
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
